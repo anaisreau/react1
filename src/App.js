@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Contact from './components/Contact';
+import ContactList from './components/ContactList';
+
 
 const Jeremy = {
   name :'Jeremy Wilson',
@@ -27,6 +29,7 @@ function App() {
     <Contact {...Jeremy}/>
     <Contact {...Gabbe}/>
     <Contact {...Morris}/>
+    <ContactList {...ContactList}/>
 
   </>)
 ;
