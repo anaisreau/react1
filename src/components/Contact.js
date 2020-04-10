@@ -1,6 +1,6 @@
 import React from 'react';
 import  './Contact.css';
-
+import ContactList from './ContactList'
 
 
 const Contact = ({avatar, name, status}) => {
@@ -14,6 +14,7 @@ const Contact = ({avatar, name, status}) => {
         <p className= 'status-text'>{status ? "online" : "offline"}</p>
         </div>
         </div>
+        {ContactList}
         </div>
 
        
