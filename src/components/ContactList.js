@@ -1,4 +1,5 @@
 import React from 'react'
+import Contact from './Contact'
 
 const users = [
     {
@@ -25,25 +26,33 @@ const users = [
       name: 'Juanita Phillips',
       avatar: 'https://randomuser.me/api/portraits/women/55.jpg',
       online: true
-    }
+    },
+{
+      name :'Jeremy Wilson',
+      avatar :'https://randomuser.me/api/portraits/men/7.jpg',
+      online :true ,
+    },
+    
+ {
+      name : 'Gabbe Kelly',
+      avatar : 'https://randomuser.me/api/portraits/men/37.jpg',
+      online :true,
+    },
+  {
+      name : 'Morris Obrien',
+      avatar : 'https://randomuser.me/api/portraits/men/44.jpg' ,
+      online :false ,
+    },
+    
   ];
+  function ContactList (){
 
-  const ContactList = () => (
+return (
     <div>
       {users.map(item => (
-        <div className ="Contact">
-        <img className = 'avatar' src={item.avatar} alt={item.name} />
-        <div>
-        <p className="name">{item.name}</p>
-        <div className='status'>
-        <i className={item.online ?'status-online':'status-offline'}/>
-        <p className= 'status-text'>{item.online ? "online" : "offline"}</p>
-        </div>
-        </div>
-        </div>
+      <Contact name = {item.name} avatar = {item.avatar} online ={item.online}/>
       ))}
-    </div>
-  );
-
-
+        </div>
+);
+      }
 export default ContactList
