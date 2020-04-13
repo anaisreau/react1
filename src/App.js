@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Contact from './components/Contact';
 import ContactList from './components/ContactList';
 
 
@@ -26,13 +25,9 @@ const Morris = {
 function App() {
   return (
     <>
-    <Contact {...Jeremy}/>
-    <Contact {...Gabbe}/>
-    <Contact {...Morris}/>
-    <ContactList {...ContactList}/>
-
-  </>)
-;
+    <ContactList/>
+    </>
+  );
 }
 
 
